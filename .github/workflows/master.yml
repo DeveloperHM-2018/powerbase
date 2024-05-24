@@ -15,4 +15,4 @@ jobs:
           server: 66.96.147.105
           username: ${{ secrets.SECRET_USERNAME }}
           password: ${{ secrets.SECRET_PASSWORD }}
-          server-dir: /v1/
+          server-dir: /
