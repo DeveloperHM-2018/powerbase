@@ -7,7 +7,7 @@
     <title>Powerbase</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png"> 
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logo.png"> 
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.css">
@@ -35,7 +35,7 @@
                                 </circle>
                                 <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round"></circle>
                             </svg>
-                            <img src="assets/img/logo/preloder.png" alt="">
+                            <img src="assets/img/Logo.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                 <div class="offcanvas__top mb-40">
                     <div class="offcanvas__logo">
                         <a href="#">
-                            <img src="assets/img/logo/logo-white.png" alt="logo">
+                            <img src="assets/img/Logo.png" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                 <div class="col-lg-12">
                     <div class="tp-header-soon-logo text-center">
                         <a href="#">
-                            <img src="assets/img/logo/logo-white.png" alt="">
+                            <img src="assets/img/Logo.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -166,12 +166,13 @@
     </header> 
 
     <main> 
-        <section class="tp-comming-area p-relative tp-comming-hight" data-background="assets/img/hero/comming-soon.jpg">
+        <section class="tp-comming-area p-relative tp-comming-hight" data-background="assets/img/BG-Images.png">
             <div class="tp-comming-bg-color"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="tp-comming-content p-relative text-center z-index-1">
+                        <br><br>
                             <h3 class="tp-comming-title">Coming Soon</h3>
                             <p>We will back with new and exciting features!</p>
                             <p>Contact us through mail id <a href="mailto: info@powerbasellc.com">info@powerbasellc.com</a> for any query.</p>
