@@ -18,6 +18,72 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+    font-family: 'AccordAlternate-Bold';
+    src: url('../fonts/AccordAlternate-Bold.woff2') format('woff2'),
+         url('../fonts/AccordAlternate-Bold.woff') format('woff'),
+         url('../fonts/AccordAlternate-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'AccordAlternate-BoldItalic';
+    src: url('../fonts/AccordAlternate-BoldItalic') format('woff2'),
+         url('../fonts/AccordAlternate-BoldItalic.woff') format('woff'),
+         url('../fonts/AccordAlternate-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AccordAlternate-ExtraBold';
+    src: url('../fonts/AccordAlternate-ExtraBold') format('woff2'),
+         url('../fonts/AccordAlternate-ExtraBold.woff') format('woff'),
+         url('../fonts/AccordAlternate-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'AccordAlternate-Medium';
+    src: url('../fonts/AccordAlternate-Medium') format('woff2'),
+         url('../fonts/AccordAlternate-Medium.woff') format('woff'),
+         url('../fonts/AccordAlternate-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AccordAlternate-Italic';
+    src: url('../fonts/AccordAlternate-Italic') format('woff2'),
+         url('../fonts/AccordAlternate-Italic.woff') format('woff'),
+         url('../fonts/AccordAlternate-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AccordAlternate-Thin';
+    src: url('../fonts/AccordAlternate-Thin') format('woff2'),
+         url('../fonts/AccordAlternate-Thin.woff') format('woff'),
+         url('../fonts/AccordAlternate-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AccordAlternate-Regular';
+    src: url('../fonts/AccordAlternate-Regular') format('woff2'),
+         url('../fonts/AccordAlternate-Regular.woff') format('woff'),
+         url('../fonts/AccordAlternate-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .flaticon-next:before {
     content: "\f101";
 }
