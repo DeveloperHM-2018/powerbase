@@ -1,29 +1,31 @@
 <!-- pre loader area start -->
 
 <main>
-   <section class="tp-hero-6-area tp-hero-6-bg mt--124 p-relative parallax-item fix pt-200 pb-318" id="parallax" data-background="assets/img/icons/vector_smart_object_7.jpg" style="background-size: cover;">
+   <section class="tp-hero-6-area tp-hero-6-bg mt--124 p-relative parallax-item fix pt-200 pb-318" id="parallax" data-background="assets/img/icons/vector_smart_object_7.webp" style="background-size: cover;">
       <div class="tp-hero-6-overlay shake-horizontal"></div>
 
       <div class="container">
          <div class="row">
-            <div class="col-lg-6">
+
+            <div class="col-lg-6 d-none-othr">
                <div class="tp-hero-6-content p-relative">
                   <div class="tp-hero-title-wrapper">
                      <h2 class="tp-hero-6-title wow fadeInUp" data-wow-duration="3s" data-wow-delay=".6s">Excavate, <br> Innovate, Elevate, <br> And Succeed.</h2>
                   </div>
                   <div class="tp-hero-6-button-wrapper d-flex flex-wrap align-items-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
-                     <div class="tp-hero-btn">
+                     <div class="tp-hero-btn r-10 l-156">
                         <a class="tp-btn tp-icon-style pink" href="<?= base_url() ?>#contact">Reach Us<span>
-                              <img src="<?= base_url() ?>assets/img/icons/Vector Smart Object.png" alt="power base" class="our-btn">
+                              <img src="<?= base_url() ?>assets/img/icons/Vector Smart Object.webp" alt="power base" class="our-btn">
                            </span></a>
                      </div>
                   </div>
                </div>
             </div>
+
             <div class="col-lg-6">
                <div class="tp-hero-6-thumb">
-                  <img class="main wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s" src="<?= base_url() ?>assets/img/icons/layer_65.png" alt="power base">
-                  <img class="shape-1 wow fadeInRight tilt-shaking" data-wow-duration="1s" data-wow-delay=".9s" src="<?= base_url() ?>assets/img/icons/Layer 60.png" alt="power base">
+                  <img class="main wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s" src="<?= base_url() ?>assets/img/icons/layer_65.webp" alt="power base">
+                  <img class="shape-1 wow fadeInRight tilt-shaking" data-wow-duration="1s" data-wow-delay=".9s" src="<?= base_url() ?>assets/img/icons/Layer 60.webp" alt="power base">
                   <!-- <img class="shape-2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s" src="assets/img/hero/home-6/hero-6-shape3.png" alt="power base"> -->
                </div>
             </div>
@@ -37,13 +39,13 @@
          <div class="row">
             <div class="col-lg-12 justify-content-center text-center">
                <div class="tp-company-6-wrapper pr-45 wow fadeInUp" data-wow-duration="6s" data-wow-delay=".5s">
-                  <img src="<?= base_url() ?>assets/img/icons/about_us.png" alt="power base" class="mb-10 w-75">
+                  <img src="<?= base_url() ?>assets/img/icons/about_us.webp" alt="power base" class="mb-10 w-75">
                   <div class="tp-company-6-title mb-50">
                      <span class="tp-section-title-pre-2 pink mb-50">About Us</span>
                      <h3 class="tp-section-title pink">We Specialize in all <br> Types of Deep Foundation Projects</h3>
                      <p class="othr-p">Our expertise spans a wide range of deep foundation techniques, Our dedicated team of professionals <br> possesses extensive and technical proficiency, ensuring the highest standards of quality <br> and efficiency in every project we undertake.</p>
                      <a class="tp-btn tp-icon-style pink about-btn" href="<?= base_url() ?>#contact">Reach Us<span>
-                           <img src="<?= base_url() ?>assets/img/icons/Vector Smart Object.png" alt="power base" class="our-btn">
+                           <img src="<?= base_url() ?>assets/img/icons/Vector Smart Object.webp" alt="power base" class="our-btn">
                         </span></a>
                   </div>
                </div>
@@ -60,14 +62,14 @@
             <div class="tp-project-item p-relative fix">
                <div class="tp-project-thumb p-relative fix">
                   <a href="<?= base_url() ?>">
-                     <img src="<?= base_url() ?>assets/img/icons/image's_.png" alt="power base">
+                     <img src="<?= base_url() ?>assets/img/icons/image's_.webp" alt="power base">
                   </a>
                </div>
             </div>
          </div>
 
          <div class="col-lg-6 col-md-6 grid-item cat2 cat4 cat5 othr-box">
-            <img src="<?= base_url() ?>assets/img/icons/Yellow Bar-01.svg" alt="power base" class="lyr-img lyr-img1 shake1">
+            <img src="<?= base_url() ?>assets/img/icons/Yellow Bar-01.svg" alt="power base" class="lyr-img lyr-img1 ">
             <div class="tp-project-item p-relative fix">
                <div class="tp-project-thumb p-relative fix">
                   <h1 class="othr-abt-hdg">A 290</h1>
@@ -83,7 +85,7 @@
                      .</p>
                </div>
                <a class="tp-btn tp-icon-style pink about-btn" href="<?= base_url() ?>#contact">Reach Us<span>
-                     <img src="<?= base_url() ?>assets/img/icons/Vector Smart Object.png" alt="power base" class="our-btn">
+                     <img src="<?= base_url() ?>assets/img/icons/vector_smart_object_4.webp" alt="power base" class="our-btn">
                   </span></a>
             </div>
          </div>
@@ -92,14 +94,14 @@
             <div class="tp-project-item p-relative fix">
                <div class="tp-project-thumb p-relative fix">
                   <a href="<?= base_url() ?>l">
-                     <img src="<?= base_url() ?>assets/img/icons/lyr3-image.jpg" alt="power base">
+                     <img src="<?= base_url() ?>assets/img/icons/lyr3-image.webp" alt="power base">
                   </a>
                </div>
             </div>
          </div>
 
          <div class="col-lg-6 col-md-6 grid-item cat2 cat4 cat5 othr-box">
-            <img src="<?= base_url() ?>assets/img/icons/Yellow Bar-01.svg" alt="power base" class="lyr-img lyr-img2 shake1">
+            <img src="<?= base_url() ?>assets/img/icons/Yellow Bar-01.svg" alt="power base" class="lyr-img lyr-img2">
             <div class="tp-project-item p-relative fix">
                <div class="tp-project-thumb p-relative fix">
                   <h1 class="othr-abt-hdg">AF 460</h1>
@@ -114,7 +116,7 @@
                      The A90 drill rig is suitable for the use in several .</p>
                </div>
                <a class="tp-btn tp-icon-style pink about-btn" href="<?= base_url() ?>#contact">Reach Us<span>
-                     <img src="<?= base_url() ?>assets/img/icons/vector_smart_object_4.png" alt="power base" class="our-btn">
+                     <img src="<?= base_url() ?>assets/img/icons/vector_smart_object_4.webp" alt="power base" class="our-btn">
                   </span></a>
             </div>
          </div>
@@ -123,7 +125,7 @@
             <div class="tp-project-item p-relative fix">
                <div class="tp-project-thumb p-relative fix">
                   <a href="<?= base_url() ?>">
-                     <img src="<?= base_url() ?>assets/img/icons/lyr3-image.jpg" alt="power base">
+                     <img src="<?= base_url() ?>assets/img/icons/lyr3-image.webp" alt="power base">
                   </a>
                </div>
             </div>
@@ -133,14 +135,14 @@
             <div class="tp-project-item p-relative fix">
                <div class="tp-project-thumb p-relative fix">
                   <a href="<?= base_url() ?>">
-                     <img src="<?= base_url() ?>assets/img/icons/Layer-75.png" alt="power base">
+                     <img src="<?= base_url() ?>assets/img/icons/Layer-75.webp" alt="power base">
                   </a>
                </div>
             </div>
          </div>
 
          <div class="col-lg-6 col-md-6 grid-item cat2 cat4 cat5 othr-box">
-            <img src="<?= base_url() ?>assets/img/icons/Yellow Bar-01.svg" alt="power base" class="lyr-img lyr-img3 shake1">
+            <img src="<?= base_url() ?>assets/img/icons/Yellow Bar-01.svg" alt="power base" class="lyr-img lyr-img3">
             <div class="tp-project-item p-relative fix">
                <div class="tp-project-thumb p-relative fix">
                   <h1 class="othr-abt-hdg">A 90</h1>
@@ -153,7 +155,7 @@
                      .</p>
                </div>
                <a class="tp-btn tp-icon-style pink about-btn" href="<?= base_url() ?>#contact">Reach Us<span>
-                     <img src="<?= base_url() ?>assets/img/icons/Vector Smart Object.png" alt="power base" class="our-btn">
+                     <img src="<?= base_url() ?>assets/img/icons/vector_smart_object_4.webp" alt="power base" class="our-btn">
                   </span></a>
             </div>
          </div>
@@ -163,7 +165,7 @@
    </section>
 
    <section class="tp-contact-area p-relative fix pt-190 pb-200 parallax-item">
-      <div class="tp-contact-bg" data-background="assets/img/contact/Layer-78.png"></div>
+      <div class="tp-contact-bg" data-background="assets/img/contact/Layer-78.webp"></div>
       <div class="container">
          <div class="row">
             <div class="col-lg-12 text-center">
@@ -171,7 +173,7 @@
                   <h3 class="tp-section-title">Join Us in shapping the <br> Future of Mining!</h3>
                </div>
                <a class="tp-btn tp-icon-style pink text-white" href="<?= base_url() ?>#contact">Reach Us<span>
-                     <img src="<?= base_url() ?>assets/img/icons/Vector Smart Object.png" alt="power base" class="our-btn">
+                     <img src="<?= base_url() ?>assets/img/icons/Vector Smart Object.webp" alt="power base" class="our-btn">
                   </span></a>
             </div>
 
@@ -184,19 +186,19 @@
 
       <div class="container">
          <div class="row">
-            <div class="col-xl-8 col-12">
+            <div class="col-xl-10 col-12">
                <div class="tp-contact-6-box wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                   <!-- <h4>Please write to us.</h4> -->
                   <h3 class="tp-contact-6-title">REACH US</h3>
                   <div class="tp-contact-6-form">
                      <div class="row">
-                        <div class="col-lg-3 col-md-6 me-auto">
+                        <div class="col-lg-4 col-md-6 me-auto">
                            <input type="text" placeholder="Your name" id="nameInput">
                         </div>
-                        <div class="col-lg-3 col-md-6 me-auto">
+                        <div class="col-lg-4 col-md-6 me-auto">
                            <input type="email" placeholder="Your email" id="emailInput">
                         </div>
-                        <div class="col-lg-3 col-md-6 me-auto">
+                        <div class="col-lg-4 col-md-6 me-auto">
                            <input type="text" placeholder="Address" id="addressInput">
                         </div>
                         <!-- <div class="col-lg-3 col-md-6">
@@ -209,7 +211,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-2 col-md-4">
                <div class="tp-contact-6-btn">
                   <button class="tp-btn othr-btn">Submit Now <span><i class="fa-regular fa-arrow-up-right"></i></span></button>
                </div>

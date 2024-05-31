@@ -45,7 +45,7 @@
          <div class="offcanvas__top mb-40">
             <div class="offcanvas__logo">
                <a href="<?= base_url() ?>">
-                  <img src="<?= base_url() ?>assets/img/icons/Logo.png" alt="logo" class="w-200">
+                  <img src="<?= base_url() ?>assets/img/icons/Logo.webp" alt="logo" class="w-200">
                </a>
             </div>
          </div>
@@ -84,7 +84,7 @@
                   <i class="fa-solid fa-phone"></i>
                </div>
                <div class="offcanvas__contact-content-content">
-                  <a href="tel:+6462425268">(646) 242-5268</a>
+                  <a href="mailto:info@powerbasellc.com">info@powerbasellc.com</a>
                </div>
             </div>
          </div>
@@ -102,12 +102,12 @@
 <div class="tp-page-wrapper">
    <header class="tp-header-area p-relative otr-hdr">
       <div class="tp-header-main-sticky tp-header-main p-relative">
-         <div class="container container-large">
+         <div class="container">
             <div class="row align-items-center">
                <div class="col-lg-4 col-md-4 col-6">
                   <div class="tp-header-logo">
                      <a href="<?= base_url() ?>">
-                        <img src="<?= base_url() ?>assets/img/icons/Logo.png" alt="power base" class="othr-logo  wow fadeInUp" data-wow-duration="3s" data-wow-delay=".6s">
+                        <img src="<?= base_url() ?>assets/img/icons/Logo.webp" alt="power base" class="othr-logo  wow fadeInUp" data-wow-duration="3s" data-wow-delay=".6s">
                      </a>
                   </div>
                </div>
@@ -142,7 +142,7 @@
                   <div class="tp-header-main-right d-flex align-items-center justify-content-end">
                      <div class="tp-header-contact d-xl-flex align-items-center">
                         <div class="tp-header-hamburger  offcanvas-open-btn">
-                           <img src="<?= base_url() ?>assets/img/icons/Hamburger_.png" alt="power base" class="hamburger-btn">
+                           <img src="<?= base_url() ?>assets/img/icons/Hamburger_.webp" alt="power base" class="hamburger-btn">
                         </div>
                      </div>
                   </div>
@@ -160,7 +160,7 @@
                <div class="col-lg-2 col-md-3 col-6">
                   <div class="tp-header-logo">
                      <a href="<?= base_url() ?>">
-                        <img src="<?= base_url() ?>assets/img/icons/Logo.png" alt="power base" class="w-161 offset-lg-1">
+                        <img src="<?= base_url() ?>assets/img/icons/Logo.webp" alt="power base" class="w-161 offset-lg-1">
                      </a>
                   </div>
                </div>
@@ -209,7 +209,7 @@
                               </span></a>
                         </div>
                         <div class="tp-header-hamburger  offcanvas-open-btn">
-                           <img src="<?= base_url() ?>assets/img/icons/Hamburger_.png" alt="power base" class="hamburger-btn top-none">
+                           <img src="<?= base_url() ?>assets/img/icons/Hamburger_.webp" alt="power base" class="hamburger-btn top-none">
                         </div>
                      </div>
                   </div>
