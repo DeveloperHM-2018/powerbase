@@ -12663,9 +12663,9 @@ blockquote img {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-project-thumb img {
-    width: 100%;
+    /* width: 100%; */
     margin-top: 0px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -16261,6 +16261,14 @@ p.checkout-coupon input[type=text]:focus {
   font-family: 'AccordAlternate-Medium';
 }
 
+@media (max-width: 768px) {
+  .othr-abt-pr {
+    font-size: 14px;
+
+  }
+}
+
+
 .lyr-img{
   position: absolute;
   height: 704px;
@@ -16423,17 +16431,12 @@ p.checkout-coupon input[type=text]:focus {
   top: 50% !important;
 }
 
-@media (min-width: 768px) {
-  .tp-contact-6-btn {
-    padding: 8px 80px;
-    top: 0;
-  }
-}
 
-@media (min-width: 992px) {
+@media (max-width: 991px) {
   .tp-contact-6-btn {
-    padding: 8px 100px;
-    top: 0;
+    padding: 8px 81px;
+    position: relative;
+    top: 0% !important;
   }
 }
 

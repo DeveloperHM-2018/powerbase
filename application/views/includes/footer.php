@@ -10,7 +10,7 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center">
                         <div class="tp-footer-widget tp-footer-6-col-1 mb--20">
                             <div class="tp-footer-logo mb-40">
-                                <a href="index.html"> <img src="<?=base_url()?>assets/img/icons/Logo.png" alt="power base" class="w-161"></a>
+                                <a href="<?= base_url() ?>"> <img src="<?= base_url() ?>assets/img/icons/Logo.png" alt="power base" class="w-161"></a>
                             </div>
                         </div>
                     </div>

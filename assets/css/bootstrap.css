@@ -330,6 +330,7 @@ button {
 }
 button:focus:not(:focus-visible) {
   outline: 0;
+  color: #facd01;
 }
 button,
 input,
