@@ -18,7 +18,7 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 text-center">
                         <div class="tp-footer-widget tp-footer-6-col-2 mb-50">
                             <p class="tp-footer-widget-title">CONNECT WITH US</p>
-                            <a href="tel:+646-242-5268" class="othr-ftr">Office (646) 242-5268</a>
+                            <a href="mailto:info@powerbasellc.com" class="othr-ftr" target="_blank">info@powerbasellc.com</a>
 
                         </div>
                     </div>

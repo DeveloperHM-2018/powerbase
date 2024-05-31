@@ -1,7 +1,8 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$config['base_url'] = 'https://powerbasellc.com/v1/';
+$config['base_url'] = 'http://localhost/powerbase/v1';
+// $config['base_url'] = 'https://powerbasellc.com/v1/';
 // $config['base_url'] = 'https://techkinds.co.in/Power-Base/';
 
 $config['index_page'] = '';
