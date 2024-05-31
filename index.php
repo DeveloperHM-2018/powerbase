@@ -1,240 +1,315 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<?php
+/**
+ * CodeIgniter
+ *
+ * An open source application development framework for PHP
+ *
+ * This content is released under the MIT License (MIT)
+ *
+ * Copyright (c) 2014 - 2019, British Columbia Institute of Technology
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @package	CodeIgniter
+ * @author	EllisLab Dev Team
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+ * @copyright	Copyright (c) 2014 - 2019, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
+ * @link	https://codeigniter.com
+ * @since	Version 1.0.0
+ * @filesource
+ */
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Powerbase</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logo.png"> 
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-    <link rel="stylesheet" href="assets/css/swiper-gl.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-    <link rel="stylesheet" href="assets/css/flaticon_ishpat.css">
-    <link rel="stylesheet" href="assets/css/spacing.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ */
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
-<body>
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
+switch (ENVIRONMENT)
+{
+	case 'development':
+		error_reporting(0);
+		ini_set('display_errors', 1);
+	break;
 
-    <div class="mouseCursor cursor-outer"></div>
-    <div class="mouseCursor cursor-inner"><span><img src="assets/img/icon/mouse-cursor.svg" alt=""></span></div>
+	case 'testing':
+	case 'production':
+		ini_set('display_errors', 0);
+		if (version_compare(PHP_VERSION, '5.3', '>='))
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
+		}
+		else
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
+		}
+	break;
 
-    <div id="loading">
-        <div id="loading-center">
-            <div id="loading-center-absolute"> 
-                <div class="tp-preloader-content">
-                    <div class="tp-preloader-logo">
-                        <div class="tp-preloader-circle">
-                            <svg width="190" height="190" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle stroke="#D9D9D9" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round">
-                                </circle>
-                                <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round"></circle>
-                            </svg>
-                            <img src="assets/img/Logo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
+	default:
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'The application environment is not set correctly.';
+		exit(1); // EXIT_ERROR
+}
 
-    <div class="back-to-top-wrapper">
-        <button id="back_to_top" type="button" class="back-to-top-btn">
-            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
-    </div>
+/*
+ *---------------------------------------------------------------
+ * SYSTEM DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" directory.
+ * Set the path if it is not in the same directory as this file.
+ */
+	$system_path = 'system';
 
-    <div class="search-area">
-        <div class="search-inner p-relative">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="search-wrapper">
-                            <div class="search-close">
-                                <button class="search-close-btn">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="search-content pt-35">
-                                <h3 class="heading text-center mb-30">Hi! How can we help You?</h3>
-                                <div class="d-flex justify-content-center">
-                                    <div class="search w-100 p-relative">
-                                        <input type="text" class="search-input" placeholder="Search...">
-                                        <a href="#" class="search-icon">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="search-overlay"></div> 
+/*
+ *---------------------------------------------------------------
+ * APPLICATION DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * directory than the default one you can set its name here. The directory
+ * can also be renamed or relocated anywhere on your server. If you do,
+ * use an absolute (full) server path.
+ * For more info please see the user guide:
+ *
+ * https://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ */
+	$application_folder = 'application';
 
-    <div class="offcanvas__area">
-        <div class="offcanvas__close">
-            <button class="offcanvas__close-btn offcanvas-close-btn">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
-        </div>
-        <div class="offcanvas__wrapper">
-            <div class="offcanvas__content">
-                <div class="offcanvas__top mb-40">
-                    <div class="offcanvas__logo">
-                        <a href="#">
-                            <img src="assets/img/Logo.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
+/*
+ *---------------------------------------------------------------
+ * VIEW DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want to move the view directory out of the application
+ * directory, set the path to it here. The directory can be renamed
+ * and relocated anywhere on your server. If blank, it will default
+ * to the standard location inside your application directory.
+ * If you do move this, use an absolute (full) server path.
+ *
+ * NO TRAILING SLASH!
+ */
+	$view_folder = '';
 
-                <div class="tp-main-menu-mobile fix d-xl-none mb-30"></div>
 
-                <div class="offcanvas__contact d-none d-xl-block">
-                    <div class="offcanvas__text mb-30">
-                        <p>The design readable content of a page hen looking at its layout The point our of using Movie template</p>
-                    </div>
-                    <div class="offcanvas__gallery mb-30">
-                        <h4 class="offcanvas__title">Gallery</h4>
-                    </div>
-                </div>
-                <div class="offcanvas-info mb-30">
-                    <h4 class="offcanvas__title">Contacts</h4>
-                    <div class="offcanvas__contact-content d-flex">
-                        <div class="offcanvas__contact-content-icon">
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="offcanvas__contact-content-content">
-                            <a href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">86 Road Broklyn Street, 600 </a>
-                        </div>
-                    </div>
-                    <div class="offcanvas__contact-content d-flex">
-                        <div class="offcanvas__contact-content-icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="offcanvas__contact-content-content">
-                            <a href="mailto:needhelp@company.com"> Needhelp@company.com </a>
-                        </div>
-                    </div>
-                    <div class="offcanvas__contact-content d-flex">
-                        <div class="offcanvas__contact-content-icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="offcanvas__contact-content-content">
-                            <a href="tel:01310-069824"> +92 666 888 0000</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="offcanvas__social">
-                    <a class="icon facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="icon youtube" href="#"><i class="fab fa-youtube"></i></a>
-                    <a class="icon linkedin" href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="body-overlay"></div> 
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here. For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT: If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller. Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ */
+	// The directory name, relative to the "controllers" directory.  Leave blank
+	// if your controller is not in a sub-directory within the "controllers" one
+	// $routing['directory'] = '';
 
-    <header class="tp-header-area p-relative tp-header-4-transparent">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="tp-header-soon-logo text-center">
-                        <a href="#">
-                            <img src="assets/img/Logo.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header> 
+	// The controller class file name.  Example:  mycontroller
+	// $routing['controller'] = '';
 
-    <main> 
-        <section class="tp-comming-area p-relative tp-comming-hight" data-background="assets/img/BG-Images.png">
-            <div class="tp-comming-bg-color"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="tp-comming-content p-relative text-center z-index-1">
-                        <br><br>
-                            <h3 class="tp-comming-title">Coming Soon</h3>
-                            <p>We will back with new and exciting features!</p>
-                            <p>Contact us through mail id <a href="mailto: info@powerbasellc.com">info@powerbasellc.com</a> for any query.</p>
-                            <!-- <div class="tp-comming-countdown" data-countdown data-date="Sep 30 2024 20:20:22">
-                                <div class="tp-comming-countdown-inner">
-                                    <ul>
-                                        <li><span data-days>0</span> Days</li>
-                                        <li><span data-hours>0</span> Hours</li>
-                                        <li><span data-minutes>0</span> Minutes</li>
-                                        <li><span data-seconds>0</span> Seconds</li>
-                                    </ul>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="tp-comming-input p-relative z-index-1">
-                            <!-- <input type="email" placeholder="Your email address">
-                            <span class="icon-1"><i class="fa-light fa-envelope"></i></span>
-                            <button>Subscribe</button> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="tp-footer-comming">
-                    <div class="row">
-                        <div class="col-md-7 col-12">
-                            <div class="tp-footer-comming-inner">
-                                <p>© 2023 Ishpat is Proudly Powered by Themepure</p>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-12">
-                            <div class="tp-footer-comming-inner text-md-end">
-                                <div class="tp-footer-widget-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section> 
-    </main>
- 
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/bootstrap-bundle.js"></script>
-    <script src="assets/js/swiper-bundle.js"></script>
-    <script src="assets/js/swiper-gl.min.js"></script>
-    <script src="assets/js/magnific-popup.js"></script>
-    <script src="assets/js/countdown.js"></script>
-    <script src="assets/js/tilt.jquery.min.js"></script>
-    <script src="assets/js/purecounter.js"></script>
-    <script src="assets/js/imagesloaded-pkgd.js"></script>
-    <script src="assets/js/isotope-pkgd.js"></script>
-    <script src="assets/js/jquery-appear.js"></script>
-    <script src="assets/js/jquery-knob.js"></script>
-    <script src="assets/js/nice-select.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/ajax-form.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
 
-</html>
+
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
+
+
+
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
+
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
+
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
+
+	if (($_temp = realpath($system_path)) !== FALSE)
+	{
+		$system_path = $_temp.DIRECTORY_SEPARATOR;
+	}
+	else
+	{
+		// Ensure there's a trailing slash
+		$system_path = strtr(
+			rtrim($system_path, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		).DIRECTORY_SEPARATOR;
+	}
+
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
+		exit(3); // EXIT_CONFIG
+	}
+
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+	// Path to the system directory
+	define('BASEPATH', $system_path);
+
+	// Path to the front controller (this file) directory
+	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
+
+	// Name of the "system" directory
+	define('SYSDIR', basename(BASEPATH));
+
+	// The path to the "application" directory
+	if (is_dir($application_folder))
+	{
+		if (($_temp = realpath($application_folder)) !== FALSE)
+		{
+			$application_folder = $_temp;
+		}
+		else
+		{
+			$application_folder = strtr(
+				rtrim($application_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
+	{
+		$application_folder = BASEPATH.strtr(
+			trim($application_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
+
+	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
+
+	// The path to the "views" directory
+	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.'views';
+	}
+	elseif (is_dir($view_folder))
+	{
+		if (($_temp = realpath($view_folder)) !== FALSE)
+		{
+			$view_folder = $_temp;
+		}
+		else
+		{
+			$view_folder = strtr(
+				rtrim($view_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.strtr(
+			trim($view_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
+
+	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
