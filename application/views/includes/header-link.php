@@ -13,7 +13,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Place favicon.ico in the root directory -->
-      <link rel="shortcut icon" type="image/x-icon" href="assets/img/icons/about_us.png">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/icons/about_us.webp">
 
       <!-- CSS here -->
       <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.css">

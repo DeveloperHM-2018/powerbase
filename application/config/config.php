@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-// $config['base_url'] = 'http://localhost/powerbase/';
-$config['base_url'] = ((isset($_SERVER['HTTPS']))? 'https':'http').'://'.$_SERVER['SERVER_NAME'].'/';
+$config['base_url'] = 'http://localhost/powerbase/';
+// $config['base_url'] = ((isset($_SERVER['HTTPS']))? 'https':'http').'://'.$_SERVER['SERVER_NAME'].'/';
 // $config['base_url'] = 'https://techkinds.co.in/Power-Base/';
 
 $config['index_page'] = '';
