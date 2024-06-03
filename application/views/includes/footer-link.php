@@ -21,6 +21,31 @@
       let offset = window.pageYOffset;
       parallax.style.backgroundPositionY = offset * 0.7 + "px";
    });
+
+   const closeMenu = () => {
+      document.querySelector('.offcanvas__area').classList.toggle('offcanvas-opened');
+      document.querySelector('.body-overlay').classList.toggle('opened');
+   }
+</script>
+<script>
+   $(window).scroll(function() {
+      if ($(this).scrollTop() > 120) {
+         $('.header-f').addClass('fixed');
+      } else {
+         $('.header-f').removeClass('fixed');
+      }
+   });
+</script>
+<script>
+   window.onscroll = () => {
+      // menu.classList.remove('fa-times');
+      // navbarLinks.classList.remove('active');
+      if (window.scrollY > 60) {
+         document.querySelector('.tp-header-sticky-cloned').classList.add('tp-header-pinned');
+      } else {
+         document.querySelector('.tp-header-sticky-cloned').classList.remove('tp-header-pinned');
+      }
+   }
 </script>
 </body>
 

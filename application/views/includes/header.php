@@ -10,7 +10,7 @@
                      </circle>
                      <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round"></circle>
                   </svg>
-                  <img src="<?= base_url() ?>assets/img/icons/Logo.png" alt="" style="width:80%">
+                  <img src="<?= base_url() ?>assets/img/icons/Logo.webp" alt="Powebase" style="width:80%">
                </div>
             </div>
          </div>
@@ -81,18 +81,18 @@
                <ul class="othr-hdr">
 
                   <li class="text-white">
-                     <a href="<?= base_url() ?>">HOME</a>
+                     <a href="<?= base_url() ?>" onclick="closeMenu();">HOME</a>
                   </li>
 
                   <li class="text-white">
-                     <a href="<?= base_url() ?>#about">ABOUT</a>
+                     <a href="<?= base_url() ?>#about" onclick="closeMenu();">ABOUT</a>
                   </li>
 
                   <li class="text-white">
-                     <a href="<?= base_url() ?>#service">SERVICE</a>
+                     <a href="<?= base_url() ?>#service" onclick="closeMenu();">SERVICE</a>
                   </li>
 
-                  <li class="text-white"><a href="<?= base_url() ?>#contact">CONTACT</a></li>
+                  <li class="text-white"><a href="<?= base_url() ?>#contact" onclick="closeMenu();">CONTACT</a></li>
                </ul>
             </div>
          </div>
@@ -120,7 +120,7 @@
 
 
 <div class="tp-page-wrapper">
-   <header class="tp-header-area p-relative otr-hdr">
+   <header class="tp-header-area p-relative otr-hdr ">
       <div class="tp-header-main-sticky tp-header-main p-relative">
          <div class="container">
             <div class="row align-items-center">
@@ -206,7 +206,7 @@
                </div>
 
                <div class="col-lg-3 col-md-9 col-6">
-                  <div class="tp-header-main-right d-flex align-items-center justify-content-end">
+                  <div class="tp-header-main-right d-flex align-items-center">
                      <div class="tp-header-contact d-xl-flex align-items-center">
                         <div class="tp-header-contact-icon search-open-btn d-none d-xl-none">
                            <span><i class="fa-sharp fa-regular fa-magnifying-glass"></i></span>
