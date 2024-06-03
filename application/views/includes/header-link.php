@@ -4,8 +4,7 @@
 <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title><?= $title ?> | Power Base our expertise spans a wide range of deep foundation techniques, Our dedicated team of professionals
-            possesses extensive and technical proficiency.</title>
+      <title><?= $title ?></title>
       <meta name="description" content="our expertise spans a wide range of deep foundation techniques, Our dedicated team of professionals
             possesses extensive and technical proficiency, ensuring the highest standards of quality
             and efficiency in every project we undertake.">

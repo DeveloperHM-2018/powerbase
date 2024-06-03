@@ -5,7 +5,7 @@ class Home extends CI_Controller
     public function index()
     {
 
-        $data['title'] = 'Home';
+        $data['title'] = 'Power Base';
         $this->load->view('includes/header-link', $data);
         $this->load->view('includes/header');
         $this->load->view('home');
