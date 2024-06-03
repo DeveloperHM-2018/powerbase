@@ -96,8 +96,8 @@
                </ul>
             </div>
          </div>
-         <div class="offcanvas-info mb-30">
-            <!-- <h4 class="offcanvas__title">Contacts</h4> -->
+         <!-- <div class="offcanvas-info mb-30">
+            <h4 class="offcanvas__title">Contacts</h4>
 
             <div class="offcanvas__contact-content d-flex">
                <div class="offcanvas__contact-content-icon">
@@ -107,10 +107,10 @@
                   <a href="mailto:info@powerbasellc.com">info@powerbasellc.com</a>
                </div>
             </div>
-         </div>
+         </div> -->
          <div class="offcanvas__social">
             <a class="icon facebook" href="<?= base_url() ?>"><i class="fab fa-instagram"></i></a>
-            <a href="<?= base_url() ?>" class="icon twitter"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="<?= base_url() ?>" class="icon twitter"><i class="fab fa-facebook"></i></a>
 
          </div>
       </div>
@@ -159,7 +159,7 @@
                   </div>
                </div>
                <div class="col-lg-4 col-md-6 col-6">
-                  <div class="tp-header-main-right d-flex align-items-center justify-content-end">
+                  <div class="tp-header-main-right d-flex align-items-center">
                      <div class="tp-header-contact d-xl-flex align-items-center">
                         <div class="tp-header-hamburger  offcanvas-open-btn">
                            <img src="<?= base_url() ?>assets/img/icons/Hamburger_.webp" alt="power base" class="hamburger-btn">
