@@ -20264,7 +20264,8 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   }
 
   .tp-footer-widget-title {
-    font-size: 23px;
+    font-size: 18px;
+    margin-bottom: 8px;
   }
 
   .othr-ftr {
@@ -20287,5 +20288,18 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-footer-main {
     padding-top: 0px;
   }
+  .tp-header-main-sticky .hamburger-btn {
+    right: -84px;
+ }
+ .tp-footer-main {
+  padding-bottom: 30px;
+}
+.tp-footer-6-col-2 {
+  margin-bottom: 28px;
+}
+.tp-header-main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 }
