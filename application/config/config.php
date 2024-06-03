@@ -7,21 +7,15 @@ $config['base_url'] = ((isset($_SERVER['HTTPS']))? 'https':'http').'://'.$_SERVE
 
 $config['index_page'] = '';
 
-
 $config['uri_protocol']    = 'REQUEST_URI';
-
 
 $config['url_suffix'] = '';
 
-
 $config['language']    = 'english';
-
 
 $config['charset'] = 'UTF-8';
 
-
 $config['enable_hooks'] = FALSE;
-
 
 $config['subclass_prefix'] = 'MY_';
 

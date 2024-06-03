@@ -18,7 +18,9 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 text-center">
                         <div class="tp-footer-widget tp-footer-6-col-2 mb-25">
                             <p class="tp-footer-widget-title">CONNECT WITH US</p>
-                            <a href="mailto:info@powerbasellc.com" class="othr-ftr" target="_blank">info@powerbasellc.com</a>
+                            <a href="mailto:info@powerbasellc.com" class="othr-ftr" target="_blank">info@powerbasellc.com</a><br>
+                            <a href="tel:+966560266662" class="othr-ftr" target="_blank">+966 560266662</a> | 
+                            <a href="tel:+966552275554" class="othr-ftr" target="_blank">+966 552275554</a>
 
                         </div>
                     </div>
