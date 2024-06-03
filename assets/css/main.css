@@ -20301,5 +20301,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
+.res-justify-content-start{
+  justify-content: flex-start !important;
+}
 }
