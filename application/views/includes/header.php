@@ -159,9 +159,9 @@
                   </div>
                </div>
                <div class="col-lg-4 col-md-6 col-6">
-                  <div class="tp-header-main-right d-flex align-items-center">
+                  <div class="tp-header-main-right d-flex align-items-center justify-content-end res-justify-content-start">
                      <div class="tp-header-contact d-xl-flex align-items-center">
-                        <div class="tp-header-hamburger  offcanvas-open-btn">
+                        <div class="tp-header-hamburger offcanvas-open-btn">
                            <img src="<?= base_url() ?>assets/img/icons/Hamburger_.webp" alt="power base" class="hamburger-btn">
                         </div>
                      </div>
