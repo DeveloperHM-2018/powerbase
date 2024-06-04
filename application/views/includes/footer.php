@@ -1,6 +1,6 @@
 <div id="contact"></div>
 
-<footer class="tp-footer-6-area tp-footer-fixed p-relative pt-50">
+<footer class="tp-footer-6-area tp-footer-fixed pt-50">
     <div class="tp-footer-6-bg"></div>
     <div class="tp-footer-box p-relative">
         <div class="container">
@@ -9,8 +9,8 @@
 
                     <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center">
                         <div class="tp-footer-widget tp-footer-6-col-1 mb--20">
-                            <div class="tp-footer-logo mb-30">
-                                <a href="<?= base_url() ?>"> <img src="<?= base_url() ?>assets/img/icons/Logo.webp" alt="power base" class="w-161"></a>
+                            <div class="tp-footer-logo mb-90">
+                                <a href="<?= base_url() ?>"> <img src="<?= base_url() ?>assets/img/icons/Logo.webp" alt="power base" class="f-logo"></a>
                             </div>
                         </div>
                     </div>

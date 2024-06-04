@@ -457,7 +457,7 @@ input[type=color] {
 .tp-page-wrapper {
   position: relative;
   z-index: 2;
-  margin-bottom: 347px;
+  margin-bottom: 508px;
   background-color: transparent !important;
   ;
 }
@@ -1309,7 +1309,9 @@ div.demo img {
   -ms-transition: all 0.3s 0s ease-out;
   -o-transition: all 0.3s 0s ease-out;
   transition: all 0.3s 0s ease-out;
+
 }
+
 
 .tp-btn span {
   display: inline-block;
@@ -4322,6 +4324,7 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
 .tp-header-sticky-cloned.tp-header-pinned {
   transform: translateY(0%);
   visibility: visible;
+  padding: 15px 0px;
 }
 
 .tp-header-onepage {
@@ -4701,6 +4704,9 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 @media (max-width: 1920px) and (max-height: 1080px) {
   .hamburger-btn {
     left: 100px;
+  }
+  .tp-header-sticky-cloned.tp-header-pinned .hamburger-btn {
+    left: 225px;
   }
 }
 
@@ -6912,9 +6918,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tp-footer-main {
-  position: relative;
-  padding-bottom: 39px;
-  padding-top: 78px;
+  /* position: relative; */
+  padding-bottom: 56px;
+    padding-top: 114px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -7146,10 +7152,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tp-footer-widget-title {
-  font-size: 24px;
-    font-weight: 100;
-    margin-bottom: 13px;
-    color: #fff;
+  font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    color: #facd01;
 }
 
 .tp-footer-copyright {
@@ -19577,6 +19583,7 @@ p.checkout-coupon input[type=text]:focus {
   width: 70%;
   padding-left: 10px;
   height: 50%;
+  transition: 0.6s;
 }
 
 .mt--124 {
@@ -19590,8 +19597,8 @@ p.checkout-coupon input[type=text]:focus {
 
 .othr-logo {
   position: relative;
-  width: 200px;
-  top: 20px;
+  width: 233px;
+    top: 49px;
   transition: transform 0.5s;
 }
 
@@ -20235,6 +20242,17 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   height: 50px;
 }
 
+.f-logo{
+  width: 263px;
+  position: relative;
+  transition: transform 0.5s;
+}
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+
+
 @media (max-width: 991px) {
   .hamburger-btn {
     left: unset;
@@ -20292,7 +20310,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     right: -84px;
  }
  .tp-footer-main {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+}
+.tp-footer-fixed{
+  padding-top: 80px !important;
 }
 .tp-footer-6-col-2 {
   margin-bottom: 28px;
@@ -20304,4 +20325,32 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .res-justify-content-start{
   justify-content: flex-start !important;
 }
+.f-logo {
+  width: 250px;
+}
+
+}
+
+.f-logo:hover{
+  transform: scale(1.1);
+}
+
+.tp-btn:hover{
+  color: #ffffff;
+}
+.tp-btn:hover .our-btn{
+  padding-left: 15px;
+}
+
+.about-btn:hover {
+   color: #6b7379;
+}
+
+.othr-btn:hover {
+  background: #facd01 !important;
+ color: #fff;
+}
+.tp-footer-widget-social a:hover {
+  color: #000000;
+   background-color: white;
 }
