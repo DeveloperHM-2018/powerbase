@@ -139,19 +139,19 @@
                            <ul>
 
                               <li class="">
-                                 <a href="<?= base_url() ?>">Home</a>
+                                 <a href="<?= base_url() ?>" onclick="closeMenu();">Home</a>
                               </li>
 
                               <li class="">
-                                 <a href="<?= base_url() ?>#about">About</a>
+                                 <a href="<?= base_url() ?>#about" onclick="closeMenu();">About</a>
                               </li>
 
                               <li class="">
-                                 <a href="<?= base_url() ?>#service">Service</a>
+                                 <a href="<?= base_url() ?>#service" onclick="closeMenu();">Service</a>
                               </li>
 
                               <li class="">
-                                 <a href="<?= base_url() ?>#contact">Contact</a>
+                                 <a href="<?= base_url() ?>#contact" onclick="closeMenu();">Contact</a>
                               </li>
                            </ul>
                         </nav>
