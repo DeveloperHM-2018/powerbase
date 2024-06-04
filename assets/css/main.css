@@ -20307,7 +20307,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     padding-top: 0px;
   }
   .tp-header-main-sticky .hamburger-btn {
-    right: -84px;
+    right: -124px;
  }
  .tp-footer-main {
   padding-bottom: 50px;
@@ -20327,6 +20327,9 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 .f-logo {
   width: 250px;
+}
+.tp-header-sticky-cloned.tp-header-pinned .hamburger-btn {
+  left: unset;
 }
 
 }
