@@ -4050,6 +4050,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   .tp-header-logo img {
     max-width: 100%;
     left: 0;
+    padding-top: 21px;
   }
 }
 
@@ -19616,9 +19617,12 @@ p.checkout-coupon input[type=text]:focus {
 
 @media (max-width: 992px) {
   .tp-hero-6-content {
-    top: 14%;
+    top: 22%;
     right: 0;
   }
+  .tp-hero-6-title {
+    margin-bottom: 52px;
+}
 }
 
 @media (max-width: 991px) {
@@ -20330,6 +20334,9 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 .tp-header-sticky-cloned.tp-header-pinned .hamburger-btn {
   left: unset;
+}
+.tp-header-sticky-cloned.tp-header-pinned {
+  padding: 0px 0px;
 }
 
 }
